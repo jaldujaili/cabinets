@@ -1,8 +1,9 @@
-class DocsController < ApplicationController
+class DocsController < BaseController
 
 	before_action :find_doc, only: [:show, :edit, :update, :destroy]
 	def index
-		@docs = Doc.order("created_at DESC")
+		binding.pry
+		@docs = Doc.where(user_id: current_user).order("created_at DESC")
 	end
 
 	def show
