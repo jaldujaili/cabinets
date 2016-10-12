@@ -1,9 +1,9 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+$dark_gray: #2B2E2E;
 #banner {
-	background-image: url(image_path("welcome_banner_image.jpg"));
+	// background-image: url(image_path("welcome_banner_image.jpg"));
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
@@ -15,7 +15,7 @@
 		vertical-align: middle;
 		text-align: center;
 		h1 {
-			@include bold_font;
+			// @include bold_font;
 			color: #529ECC;
 			font-size: 3.5rem;
 			margin: 0;
@@ -37,21 +37,21 @@
 		margin: 0 0 .5rem 0;
 	}
 	.name {
-		@include bold_font;
+		// @include bold_font;
 		color: $dark_gray;
 		margin: 0;
 		font-size: .85rem;
 	}
 }
-
-#callouts {
-	background-image: url(image_path("callout_background.jpg"));
+#callouts{
+	background-image: image-url("callout_background.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
 	width: 100%;
 	min-height: 400px;
 	display: table;
+
 	.callout_inner {
 		display: table-cell;
 		vertical-align: middle;
@@ -62,8 +62,8 @@
 		padding: 1.5rem 2.5%;
 		float: left;
 		h2 {
-			@include bold_font;
-			color: white;
+			font-weight: bold;
+			color: black;
 			margin-bottom: 0;
 		}
 		p {
@@ -72,11 +72,12 @@
 	}
 }
 
+
 #bottom_cta {
 	text-align: center;
 	padding: 7.5rem 0;
 	h2 {
-		@include bold_font;
+		// @include bold_font;
 		color: $dark_gray;
 		font-size: 3rem;
 		margin: 0;
